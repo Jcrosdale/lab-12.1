@@ -1,5 +1,5 @@
 // Import the express library.
-const express = require('express');
+import express from 'express'
 
 // Import the built-in path module, which will help you create correct file paths.
 
