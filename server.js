@@ -9,6 +9,9 @@ const app = express();
 // Define a port to run the server on (e.g., 3000).
 const port = 3000;
 
+// Hint: To send a file, you’ll need to provide an absolute path. Use path.join(__dirname, 'public/index.html') to create a reliable path to your HTML files.
+app.use(express.static('./public'));
+
 // Create a route handler for GET requests to the root URL (/). When this route is requested, it should send the index.html file from your public directory.
 app.get('/', (req, res) => {
     res.send('Request to index');
