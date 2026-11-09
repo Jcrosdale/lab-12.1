@@ -25,5 +25,5 @@ app.get('/contact', (req, res) => {
 
 // Start the server and have it listen on your chosen port. When it starts, it should log a message to the console, like Server is running on port 3000.
 app.listen(port, () => {
-    console.log(`App listening on port ${port}`)
+    console.log(`Server is running on port ${port}`)
 })
