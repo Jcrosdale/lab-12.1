@@ -14,7 +14,7 @@ app.use(express.static('./public'));
 
 // Create a route handler for GET requests to the root URL (/). When this route is requested, it should send the index.html file from your public directory.
 app.get('/', (req, res) => {
-    res.send('Request to index');
+    res.send('Request to index'); // Request index
 });
 
 
