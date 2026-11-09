@@ -16,5 +16,8 @@ app.get('/', (req, res) => {
 
 
 // Create another route handler for GET requests to /contact. This should send the contact.html file.
+app.get('/contact', (req, res) => {
+    res.send('Request to contact')
+});
 
 // Start the server and have it listen on your chosen port. When it starts, it should log a message to the console, like Server is running on port 3000.
